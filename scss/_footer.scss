@@ -1,0 +1,43 @@
+footer {
+    width: 100%;
+    background-color: var(--blue-primary);
+    padding-top: 6.7rem;
+    padding-bottom: 6.5rem;
+    .container {
+        @include centerAndSpace;
+    }
+
+    .text {
+        h3 {
+            color: #FFFFFF;
+        }
+        p {
+           font-weight: 500;
+           font-size: 1.4rem;
+           line-height: 180%;
+           color: rgba(255, 255, 255, 0.8); 
+
+        }
+    }
+
+    @include responsive(560px) {
+        padding-top: 6rem;
+        padding-bottom: 8.6rem;
+        .container {
+            flex-direction: column;
+        }
+        .text {
+            width: 100%;
+            max-width: 28.2rem;
+            margin-bottom: 4.8rem;
+            h3 {
+                text-align: center;
+                
+            }
+            p {
+                text-align: center; 
+            }
+        }
+    }
+
+}
